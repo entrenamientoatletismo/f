@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>camara</title>
+</head>
+<body>
+ <video autoplay controls></video>  
+ 
+  <script>
+    window.url = window.URL || window.webkitURL;
+      navigador.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+      
+      navigator.getUserMedia({audio: true, video:true},function(vid){
+                             document.queryselector('video').src = window.url.createObjecURL(vid);
+      
+                             )};
+    </script> 
+</body>
+</html>
